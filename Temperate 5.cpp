@@ -2,31 +2,33 @@
 
 main()
 {
-	int n,s,prime=1;
+	int n,i,num=0;
 	
 	printf("enter number=");
 	scanf("%d",&n);
 	
 	if(n==0 && n==1)
-	prime=1;
-	
-	for(s=2; s<=n / 2; ++s)
 	{
-	
-	if (n%s==0)
-    {
-    	prime=1;
-	}
-}
-    
-  	if(prime=1)
-	  printf("%d is prime number");
-     
-    else
-    
-    	printf("%d is not prime number");
-	
+	printf("%d is not a prime number",n);
+	else
+	{
+	for(i=2; i<=n/2;i++)
+	{
+	  if (n%i==0)
+            {
+    	       num=1;
+	    }
 
+	}
+  	if(num==0)
+	{
+	  printf("%d is prime number",n);
+	}
+    else
+    {
+    	printf("%d is not prime number",n);
+	
+    }
 
 
 
